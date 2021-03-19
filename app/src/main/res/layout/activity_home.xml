@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorBackgroundFragment"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:onClick="LogOut"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorAccent"
+            android:id="@+id/tablayout_id"></com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewpager_id"></androidx.viewpager.widget.ViewPager>
+
+
+    </LinearLayout>
+
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    app:fab_addButtonColorNormal="@color/colorAccent"
+    app:fab_addButtonColorPressed="@color/colorPrimary"
+    app:fab_labelStyle="@style/customFab"
+    >
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccent"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_size="mini"
+        app:fab_icon="@drawable/ic_baseline_text_snippet_24"
+        android:id="@+id/text_post_btn"
+        app:fab_title="Post Text"/>
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccent"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_size="mini"
+        app:fab_icon="@drawable/ic_baseline_poll_24"
+        android:id="@+id/poll_post_btn"
+        app:fab_title="Poll"/>
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_colorNormal="@color/colorAccent"
+        app:fab_colorPressed="@color/colorPrimary"
+        app:fab_size="mini"
+        app:fab_icon="@drawable/ic_baseline_image_24"
+        android:id="@+id/image_post_btn"
+        app:fab_title="Post Image"/>
+
+
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

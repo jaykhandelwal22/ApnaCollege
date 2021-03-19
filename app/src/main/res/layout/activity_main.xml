@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myred"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+      <com.airbnb.lottie.LottieAnimationView
+          android:layout_marginTop="10dp"
+          android:id="@+id/student_anim"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"
+          app:lottie_rawRes="@raw/student_anim"
+          android:layout_centerHorizontal="true"
+
+          android:layout_width="match_parent"
+          android:layout_height="300dp"/>
+
+      <LinearLayout
+
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+            <Button
+                android:id="@+id/m_btn_getStarted"
+                android:text="Get Started"
+                android:textSize="25sp"
+                android:textColor="@color/myred"
+                android:textAllCaps="false"
+                android:layout_marginTop="450dp"
+                android:backgroundTint="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/m_SignIn_text"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Sign In"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+
+
+
+</RelativeLayout>

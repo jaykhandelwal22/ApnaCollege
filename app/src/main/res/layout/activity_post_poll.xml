@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    tools:context=".PostPoll">
+
+
+
+    <TextView
+        android:maxLines="10"
+        android:text="Hi There!\n Wanna Check \n Something?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/poll_quest_edittxt"
+        android:layout_marginTop="20dp"
+        android:hint="Poll Question..."
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/op1_ed_txt"
+        android:hint="Option 1"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/op2_ed_txt"
+        android:hint="Option 2"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent" />
+    <EditText
+        android:id="@+id/op3_ed_txt"
+        android:hint="Option 3"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent" />
+    <EditText
+        android:id="@+id/op4_ed_txt"
+        android:hint="Option 4"
+        android:textColor="@android:color/white"
+
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:backgroundTint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/poll_post_btn"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Anonymously"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/poll_go_back_txt"
+        android:layout_gravity="center_horizontal"
+        android:text="Go Back?"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/poll_prg_bar"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
